@@ -13,21 +13,26 @@
         <h1>Portfolio website <br> Rick Koolen</h1>
         <nav>
             <ul>
-                <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
-                <button class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
-                <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+                <button class="selected" id="Home" onclick="change_tab(this.id);"><a href="#Home">Home</a></button>
+                <button class="notselected" id="Portfolio" onclick="change_tab(this.id);"><a href="#Portfolio">Portfolio</a></button>
+                <!-- <button class="notselected" id="Contact" onclick="change_tab(this.id);">Contact</button> -->
             </ul>
         </nav>
     </header>
 
     <!-- Home -->
-    <div id="Home" class="home tabcontent">
-        <p></p>
+    <div id="Home_desc" class="home hidden_desc">
+        <h2>Introduction to myself</h2>
+        <p>My name is Rick Koolen, currently I am working as a teamleader Accounts Payable and learning 
+            how to code and build website. I learn this through the course "Full stack engineer career path" 
+            at Codecademy. This website is my portfolio with all the websites I made throughout this course 
+            and are worth noticing :).
+        </p>
     </div>
 
     <!-- Portfolio -->
 
-    <div id="Portfolio" class="portfolio tabcontent">
+    <div id="Portfolio_desc" class="portfolio hidden_desc">
         <div class="information">
             <h2>Projects on my Github page:</h2>
             <p>The following projects are made during my home study at Codecademy</p>
@@ -49,7 +54,7 @@
                 <br>
                 <a href="https://rickkoolen.github.io/Excursion/" target="_blank">Github page</a>
             </div> 
-
+<!--
             <div class="website">
                 <h3></h3>
                 <img src="" alt="">
@@ -81,7 +86,7 @@
                 <br>
                 <a href="" target="_blank">Github page</a>
             </div>
-
+ 
             <div class="website">
                 <h3></h3>
                 <img src="" alt="">
@@ -89,10 +94,42 @@
                 <br>
                 <a href="" target="_blank">Github page</a>
             </div>
+-->
         </div>
     </div>
 
+    <div id="page_content">
+        <h2>Introduction to myself</h2>
+        <p>My name is Rick Koolen, currently I am working as a teamleader Accounts Payable and learning 
+            how to code and build website. I learn this through the course "Full stack engineer career path" 
+            at Codecademy. This website is my portfolio with all the websites I made throughout this course 
+            and are worth noticing :).
+        </p>
+    </div>
+    
     <!-- Footer -->
 
+    <footer id="Contact" class=>
+        <table>
+            <th>Platform:</th>
+            <th>Name:</th>
+            <th>Link:</th>
+            <tr>
+                <td>LinkedIn:</td>
+                <td>RickKoolen</td>
+                <td><a href="www.linkedin.com/in/RickKoolen">Link</a></td>
+            </tr>
+            
+            <tr>
+                <td>Github:</td>
+                <td>RickKoolen</td>
+                <td><a href="https://github.com/RickKoolen">Link</a></td>
+            </tr>
+        </table>
+ 
+        <div class="disclaimer">
+            <p>© 2022 RK</p> 
+        </div>
+    </footer>
 </body>
 </html>

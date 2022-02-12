@@ -48,8 +48,31 @@ button{
     cursor: pointer;
 }
 
+button a{
+    text-decoration: none;
+}
+
+button a:link, 
+button a:visited, 
+button a:active {
+    color: black;
+}
+
+ul .selected{
+    background-color: grey;
+}
+
 /* Home */
 
+.home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    height: 600px;
+}
 
 /* Portfolio */
 
@@ -95,12 +118,53 @@ button{
     max-height: 80%;
 }
 
+.website a {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.website a:hover{
+    background-color: darkgray;
+}
+
+/* Footer */
+
+footer{
+    background-color: darkgray;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.75rem;
+    margin-top: 10rem;
+}
+
+footer table{
+    max-height: 80px;
+    max-width: 240px;
+    text-align: left;
+}
+
+footer .disclaimer{
+    text-align: end;
+    font-size: 0.75rem;
+    margin-top: 55px;
+}
+
+footer a:link,
+footer a:visited,
+footer a:active{
+    color: black;
+}
+
+
+
 /* Tab styles */
 .active{
     background-color: gray;
 }
 
-.tabcontent{
-
+.hidden_desc
+{
+ display:none;
+ visibility:hidden;
 }
-
