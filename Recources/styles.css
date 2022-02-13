@@ -64,17 +64,37 @@ ul .selected{
 
 /* Home */
 
-.home{
+.introduction{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
     margin: auto;
-    width: auto;
-    height: 600px;
+    max-width: 1200px;
+    max-height: 600px;
+    padding: 0px 10px;
 }
 
+.introhead{
+    width: 50%;
+    text-align: center;
+}
+
+.introduction img{
+    border-radius: 10%;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.introduction p{
+    width: 50%;
+}
+
+
 /* Portfolio */
+
+.information{
+    display: block;
+    text-align: center;
+}
 
 .websitecontainer{
     display: flex;
@@ -82,11 +102,6 @@ ul .selected{
     flex-wrap: wrap;
     text-align: center;
     margin: auto;
-}
-
-.information{
-    display: block;
-    text-align: center;
 }
 
 .website{
@@ -135,7 +150,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: 0.75rem;
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
 footer table{
